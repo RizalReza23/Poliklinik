@@ -1,27 +1,14 @@
-# Regulation
-<h1>Achmad Arif Viansyah</h1>
-<h1>db: poli_bk, import 'poli_bk.sql'</h1>
-<h2>Sample of Login Credentials</h2>
-<h3>DATABASE</h3>
-<h3>LOGIN ADMIN</h3>
-username : Reep<br>
-password : 123
-<br>
-<h3>LOGIN DOKTER</h3>
-NIP : gunakan nip dokter<br>
-password : 123
-<br>
-<h3>Periksa pasien</h3>
-gunakan no RM
+Cara Memakai Website :
+1. Download keseluruhan file
+2. Extract file di xampp/htdocs
+3. Buat database baru bernama poli_bk dan import database yang ada
+4. Kemudian jalankan aplikasi nya
 
-# Language
-PHP
-#DB
-phpMyAdmin
-<br>
-#NB <br>
-Aplikasi Berbasis Website <b> POLIKLINIK </b> menggunakan PHP dengan connection Admin, Dokter dan Pasien.
-Fitur tersedia : <br>
-Admin : Home, Jadwal Dokter, Data Dokter, Obat, Poli dan Pasien. <br>
-Dokter : Home, Periksa, Riwayat, Set Jadwal Dokter. <br>
-Pasien : login, Periksa Pasien.
+Login Admin 
+username : Admin
+password : admin
+
+Login Dokter 
+username : nip (bisa dicek di bagian admin)
+password : 123
+
