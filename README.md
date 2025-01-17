@@ -1,4 +1,4 @@
-Project By Rizal Rezaroebojo
+Project By Rizal Rezaroebojo  
 A11.2021.13881
 
 Cara Penggunaan Website Poliklinik :
@@ -6,10 +6,10 @@ Cara Penggunaan Website Poliklinik :
 2. Import database ke phpmyadmin
 3. Jalankan website
 
-Login Admin :
-Username : Admin
-Pw : admin
+Login Admin :  
+Username : Admin  
+Pw : admin  
 
-Login Dokter :
-Username : NIP 
-Pw : 123
+Login Dokter :  
+Username : NIP   
+Pw : 123  
