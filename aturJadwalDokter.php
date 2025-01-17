@@ -34,6 +34,28 @@
         } else {
             $stmt = $mysqli->prepare("INSERT INTO jadwal_periksa (id_dokter, hari, jam_mulai, jam_selesai, statues) VALUES (?, ?, ?, ?, ?)");
             $stmt->bind_param("isssi", $id_dokter, $hari, $jam_mulai, $jam_selesai, $statues);
+
+            // Validasi: Cek apakah hari praktik dokter sudah ada
+        if (!isset($_POST['id'])) { // Hanya berlaku untuk penambahan baru, bukan update
+            $cekJadwal = $mysqli->prepare("SELECT * FROM jadwal_periksa WHERE id_dokter = ? AND hari = ?");
+            $cekJadwal->bind_param("is", $id_dokter, $hari);
+            $cekJadwal->execute();
+            $result = $cekJadwal->get_result();
+
+            if ($result->num_rows > 0) {
+                echo "
+                    <script>
+                        alert('Gagal menambah jadwal: Dokter sudah memiliki jadwal di hari yang sama.');
+                        document.location='berandaDokter.php?page=aturJadwalDokter';
+                    </script>
+                ";
+                exit; // Hentikan eksekusi jika jadwal di hari yang sama sudah ada
+            }
+
+            $cekJadwal->close();
+        }
+
+        // Proses penyimpanan data yang sudah ada (kode Anda sebelumnya)
     
             if ($stmt->execute()) {
                 echo "

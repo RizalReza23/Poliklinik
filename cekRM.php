@@ -49,7 +49,7 @@
                             ?>
                             <div class="form-group">
                                 <label for="no_rm">Nomor Rekam Medis (RM)</label>
-                                <input type="text" name="no_rm" class="form-control" required placeholder="Masukkan no_rm anda">
+                                <input type="text" name="no_rm" class="form-control" required placeholder="Masukkan No RM anda">
                             </div>
                             <div class="form-group mt-3">
                                 <label for="alamat">Alamat</label>
@@ -60,7 +60,7 @@
                             </div>
                         </form>
                         <div class="text-center">
-                            <p class="mt-3">Belum terdaftar? <a href="index.php?page=registerPasien" style="text-decoration: none;">Menjadi pasien baru</a></p>
+                            <p class="mt-3">Belum terdaftar? <a href="index.php?page=registerPasien" style="text-decoration: none;">Daftar pasien baru</a></p>
                         </div>
                     </div>
                 </div>

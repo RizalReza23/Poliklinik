@@ -24,7 +24,7 @@
 <main id="cekrm-page">
     <div class="container" style="margin-top: 5.5rem;">
         <div class="row justify-content-center">
-            <h2 class="text-center mb-4">Halaman Riwayat Pasien</h2>
+            <h2 class="text-center mb-4">Riwayat Pasien</h2>
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header text-center fw-bold" style="font-size: 1.5rem;">MASUKKAN DATA ANDA</div>

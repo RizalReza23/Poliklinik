@@ -115,7 +115,7 @@ include_once("koneksi.php");
             <a class="nav-link" href="index.php?page=cekRM">Halaman Poli</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?page=riwayatpasien">Riwayat</a>
+            <a class="nav-link" href="index.php?page=riwayatpasien">Riwayat Pasien</a>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
@@ -141,13 +141,13 @@ include_once("koneksi.php");
                 <img src="images/poli.jpg" alt="Logo Poliklinik Penting Sehat" style="width: 155px; height: auto; border-radius: 10px;">
             </div>
             <div>
-                <h1 class="display-4">Selamat Datang Di Poliklinik Penting Sehat,</h1>
+                <h1 class="display-4">Poliklinik Penting Sehat,</h1>
                 <h2 class="lead">WAJIB SEHAT KARENA SAKIT ITU MAHAL!!!';
         if (isset($_SESSION['username'])) {
             // Jika sudah login tampilkan username
             echo '. ' . $_SESSION['fullname'] . '</h2><hr></div>';
         } else {
-            echo '</h2><hr><p class="lead">Silakan Login terlebih dahulu.</p></div>';
+            echo '</h2><hr><p class="lead">Silakan Login atau Mendaftar Terlebih Dahulu.</p></div>';
         }
         echo '</div>';
     }
